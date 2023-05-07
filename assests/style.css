@@ -1,0 +1,636 @@
+/*-------------header-----------*/
+body{
+    background-color: #030303;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 5px 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+h1::selection{
+    background-color: #f602b2;
+}
+h2::selection{
+    background-color: chartreuse;
+}
+h3::selection{
+    background-color: aqua;
+}
+h4::selection{
+    background-color: gray;
+}
+h5::selection{
+    background-color: aquamarine;
+}
+p::selection{
+    background-color: darkorange;
+}
+header>img{
+    width:100px;
+    margin: 10px 0 0 0;
+}
+
+/*home*/
+#home{
+    position: relative;
+}
+.tableR{
+    margin: 200px 0 0 150px;
+}
+.tableR>h1::selection{
+    background-color: #f602b2;
+}
+h1{
+    color: white;
+}
+p{
+    color: white;
+}
+#txt1{
+    color: white;
+    font-size: 1.5em;
+}
+#txt2{
+    color: white;
+    font-size: 3em;
+}
+#txt3{
+    color: white;
+    font-size: 2em;
+}
+#txt4{
+    color: white;
+    font-size: 2em;
+}
+#txt5{
+    color: white;
+    font-size: 2em;
+}
+#txt6{
+    color: white;
+    font-size: 1em;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 5px;
+    transform: scale(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform: scale(1);
+    transform-origin: left;
+    background: red;
+}
+header > nav > div {
+    color: white;
+    font-size: 2em;
+    display: none;
+
+}
+header > nav > div :hover{
+    transform: rotate(360deg);
+    transition-duration: 2s;
+    color: red;
+}
+#i1{
+    margin: -650px 10px 0 0;
+    width: 450px;
+    height: 675px;
+    padding-top: 70px;
+
+}
+
+/*-------------home page icon-----------*/
+.main2{
+    display: inline-flex;
+    margin-left: 150px;
+}
+.main2 .icons{
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: all 0.4s cubic-bezier(0.68,0.55,0.265,1.55);
+}
+.main2 .icons span{
+    height: 40px;
+    width: 40px;
+    display: block;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.4);
+}
+.main2 .icons span i{
+    font-size: 25px;
+    line-height: 40px;
+    color: #171515;
+}
+.main2 .icons .tooltip{
+    position: absolute;
+    top: 00px;
+    background: #fff;
+    font-size: 17px;
+    padding: 10px 18px;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,0.55,0.265,1.55);
+}
+.main2 .icons:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    top: -60px;
+}
+.main2 .icons .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%)rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68,0.55,0.265,1.55);
+}
+.main2 .icons:hover span i{
+    color: #fff;
+}
+.main2 .icons:hover span,
+.main2 .icons:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+.main2 .fb2:hover span,
+.main2 .fb2:hover .tooltip,
+.main2 .fb2:hover .tooltip:before{
+    background: #3B5999;
+}
+.main2 .twt2:hover span,
+.main2 .twt2:hover .tooltip,
+.main2 .twt2:hover .tooltip:before{
+    background: #1da1f2;
+}
+.main2 .insta2:hover span,
+.main2 .insta2:hover .tooltip,
+.main2 .insta2:hover .tooltip:before{
+    background: #f602b2;
+}
+.main2 .link2:hover span,
+.main2 .link2:hover .tooltip,
+.main2 .link2:hover .tooltip:before{
+    background: #0077b5;
+}
+.main2 .git2:hover span,
+.main2 .git2:hover .tooltip,
+.main2 .git2:hover .tooltip:before{
+    background: #171515;
+}
+#b2{
+    background-color: transparent;
+    border: 1px solid #f602b2;
+    color: white;
+    font-size: 1em;
+    border-radius: 10px;
+    width: 100px;
+    height: 34px;
+    margin-left: 150px;
+}
+#b2:hover{
+    color: darkorange;
+    border-color:darkorange ;
+}
+#b3{
+    background-color: transparent;
+    border: 1px solid chartreuse;
+    color: white;
+    font-size: 0.7em;
+    border-radius: 10px;
+    width: 85px;
+    height: 30px;
+    margin-left: 10px;
+
+}
+#b3:hover {
+    color: chartreuse;
+    border-color: blueviolet;
+}
+
+/*about page*/
+#about{
+    position: relative;
+}
+#ab\ txt1{
+    font-size: 3em;
+    margin: 250px 0 0 150px;
+}
+#img2{
+    width: 550px;
+    height: 600px;
+    margin-left: 150px;
+}
+
+#about >div >h1{
+    text-align: right;
+    margin-right: 200px ;
+    margin-top: 200px;
+    font-size: 1.8em;
+}
+#about >div >p{
+    text-align: left;
+    margin-left: 900px;
+    margin-top: 80px;
+}
+#see\ more{
+    width: 80px;
+    height: 25px;
+    font-size: 0.7em;
+    margin-top: 20px;
+    margin-left: 400px;
+    border-color: #f602b2;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+}
+#see\ more:hover{
+    border-color: chartreuse;
+}
+/*skills page*/
+#skills{
+    position: relative;
+}
+#sk\ txt1{
+    font-size: 3em;
+    margin: 400px 0 0 150px;
+}
+/*project page*/
+#projects{
+    position: relative;
+}
+#projects{
+    font-size: 2em;
+    margin: 400px 0 0 150px;
+}
+#projects > div{
+    position: absolute;
+}
+#projects img{
+    width: 350px;
+    height: 200px;
+}
+#projects h4{
+    text-align: center;
+    font-size: 20px;
+}
+#projects > #pr2{
+    margin-left: 425px;
+}
+#projects > #pr3{
+    margin-left: 850px;
+}
+#projects > #pr4{
+    margin-top: 300px;
+    margin-left: 200px;
+}
+#projects > #pr5{
+    margin-top: 300px;
+    margin-left: 675px;
+}
+/*contact page */
+#contact{
+    position: relative;
+
+}
+#contact{
+    font-size: 2em;
+    margin: 800px 0 0 150px;
+
+}
+#contact h5{
+    color: white;
+    font-size: 15px;
+}
+.main{
+
+    display: grid;
+    align-items: center;
+    justify-content: left;
+
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background: #fff;
+    margin: 10px;
+    text-align: center;
+    font-size:30px;
+    line-height: 50px;
+    font-family: sans-serif;
+    overflow: hidden;
+    transition: all.3s ease-out;
+
+}
+.icon:hover{
+    width: 250px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.icon a{
+    text-decoration: none;
+    transition: all.3s ease-out;
+
+}
+.vertical {
+    border-left: 6px solid white;
+    height: 700px;
+    position: absolute;
+    top: 120px;
+    left: 400px;
+}
+#contact #con\ txt1{
+    color: lightgray;
+    text-align: right;
+    margin-right: 400px ;
+    margin-top: -450px;
+    font-size: 0.8em;
+}
+#contact > form{
+    margin-left: 500px ;
+}
+
+#contact #fname{
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 75px;
+}
+#contact >form >div:nth-child(1) label >h5{
+   text-align: right;
+    margin-right: 350px;
+    margin-top: -80px;
+}
+#contact #lname {
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 500px;
+}
+#contact >form >div:nth-child(3) label >h5{
+    margin-top: -50px;
+}
+#contact #email {
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 35px;
+}
+#contact >form >div:nth-child(5) label >h5{
+    margin-top: -50px;
+}
+#contact textarea{
+    margin-left: -100px;
+    margin-top: -50px;
+}
+#contact >form >div:nth-child(8) label >h5{
+    margin-top: -20px;
+}
+#contact #password{
+    margin-left: -80px;
+    margin-top: -50px;
+
+}
+#b4{
+    width: 70px;
+    height: 30px;
+    border: 1px solid white;
+    background-color:transparent ;
+    color: white;
+    position: absolute;
+    margin-left: 15px;
+}
+#b4:hover{
+    color: black;
+    background-color: chartreuse;
+}
+/*media quory*/
+@media all and (max-width: 769px) {
+    header >nav >list{
+        display: none;
+    }
+    header > nav > div {
+        display: flex;
+        color: white;
+        font-size: 1.5em;
+    }
+    main>section>div {
+        width: 100%;
+    }
+    #i1{
+        width: 250px;
+        height: 400px;
+        padding-top: 0px;
+       margin-top: -350px;
+    }
+    #txt1{
+        font-size: 1em;
+    }
+    #txt2{
+        font-size: 2em;
+    }
+    #txt3{
+        font-size: 1em;
+    }
+    #txt4{
+        font-size: 1em;
+    }
+    #txt5{
+        font-size: 1em;
+    }
+    #txt6{
+        font-size:0.5em;
+    }
+    header>img{
+        width: 75px;
+    }
+    .tableR{
+        margin-left: 100px;
+    }
+    .main2{
+        margin-left: 100px;
+    }
+    .main2 .icons span{
+        width: 25px;
+        height: 25px;
+    }
+    .main2 .icons span i{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .main2 .icons .tooltip{
+        font-size: 15px;
+    }
+    #b2{
+        width: 70px;
+        height: 20px;
+        margin-left: 100px;
+        font-size: 0.7em;
+    }
+    #b3{
+        width: 70px;
+        height: 20px;
+        font-size: 0.5em;
+    }
+    header>img{
+        margin: 10px 0 0 -8px;
+    }
+    #ab\ txt1{
+        font-size: 2em;
+        margin-left: 100px;
+    }
+    #about >div >h1{
+        font-size: 1em;
+        text-align: right;
+        margin-right: 20px;
+        margin-top: 100px;
+    }
+    #about >div >p{
+        font-size: 0.7em;
+        text-align: left;
+        margin-left: 500px;
+        margin-top: 40px;
+    }
+    #img2{
+        width: 280px;
+        height: 310px;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+    #sk\ txt1{
+        font-size: 2em;
+        margin-left: 100px;
+        margin-top: 250px;
+    }
+}
+/*@media all and (max-width:1500px) {*/
+/*    #i1{*/
+/*        width: 350px;*/
+/*        height: 500px;*/
+/*        padding: 0;*/
+/*    }*/
+
+/*    .tableR{*/
+/*        margin: 200px 0 0 120px;*/
+/*    }*/
+/*    .main2{*/
+/*             margin-left: 120px;*/
+/*    }*/
+/*    #b2{*/
+/*        margin-left: 120px;*/
+/*    }*/
+/*}*/
+
+/*-------------main----------*/
+
+font{
+    color: white;
+}
+h4{
+    color: white;
+}
+.b1{
+    background-color: black;
+}
+/*.b1:hover{*/
+/*    background-color: red;*/
+/*}*/
+.t1:hover{
+    color: red;
+    text-decoration: underline red;
+}
+
+.b3{
+    background-color: magenta;
+    border-radius: 20px;
+    width: 450px;
+    height: 35px;
+}
+.b3:hover{
+    background-color: purple;
+    text-decoration: underline white;
+
+}
+#l1{
+    color: red;
+}
+#l1\.1{
+    color: red;
+}
+#l2{
+    color: chartreuse;
+}
+#l2\.1{
+    color: chartreuse;
+}
+#l3{
+    color: magenta;
+}
+#l4{
+    color: yellow;
+}
+#l5{
+    color: orange;
+}
+#l6{
+    color: cyan;
+}
+.box{
+background-color: white;
+    width: 200px;
+    height: 200px;
+    border: 30px solid red;
+    border-radius: 90%;
+}
+
+:focus{
+    background-color:lightgray;
+}
+input:focus{
+    background-color: lightgray;
+}
+
+input{
+    width: 210px;
+}
+
+/*.main .fb:hover{*/
+/*    background: url("https://www.youtube.com/");*/
+/*    background-color: #3B5999;*/
+/*}*/
