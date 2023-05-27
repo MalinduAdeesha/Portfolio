@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <title>my portfolio</title>
     <link rel="stylesheet" href="assests/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
     <script src="https://kit.fontawesome.com/003a1d06dc.js" crossorigin="anonymous"></script>
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
+<!--body-->
+<div class="cointainer">
+    <div class="bubble">
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+
+    </div>
+</div>
 <!--header-->
 <header>
     <img src="assests/logo/l1.jpg"
@@ -18,12 +36,13 @@
     >
     <nav class="navigation">
         <list>
+            <a href="index.html#i1">Home</a>
             <a href="index.html#about">About</a>
             <a href="index.html#skills">Skills</a>
             <a href="index.html#projects">Projects</a>
             <a href="index.html#contact">contact</a>
             <a href="index.html#other">Other</a>
-            <a href="index.html#i1">Home</a>
+
         </list>
         <div>
             <ion-icon name="add-circle-outline"></ion-icon>
@@ -32,16 +51,33 @@
 </header>
 <!--Home---------------------------------------------------------------------->
 <section id="home">
-    <div class="tableR">
+
+    <div class="LeftSide">
         <h1 id="txt1">Hey i am</h1>
         <h1 id="txt2"><strong><span id="l1">M</span >alindu <span id="l1.1">A</span>deesha</strong></h1>
-        <h1 id="txt3">Software Engineer</h1>
-        <h1 id="txt4">Software Developer</h1>
-        <h1 id="txt5">UX/UI Designer</h1>
-        <h1 id="txt6">i'm profesional UX/UI designer with front end <br>development skills based in Sri Lanka</h1>
-    </div>
 
-    <br>
+        <div class="outer-heading">
+            <h1>
+                <div class="inner-heading">
+        <span>
+        Software Engineer <br>
+        </span>
+        <span>
+        Software Developer <br>
+        </span>
+        <span>
+        UX/UI Designer <br>
+        </span>
+        <span>
+        Graphic Designer <br>
+        </span>
+                </div>
+            </h1>
+        </div>
+
+        <h1 id="txt6">i'm profesional UX/UI designer with front end <br>development skills based in Sri Lanka</h1>
+
+        <br>
 
     <div class="main2">
         <div class="icons fb2">
@@ -79,35 +115,43 @@
     <br>
     <br>
     <button type="Hire me" id="b2">Hire me</button>
-    <button type="download" id="b3" title="click to download cv">Download CV</button>
-<!--    main img-->
-    <img id="i1" src="assests/img/main.jpeg"
-         alt="main.jpeg"
-         title="my image"
-         align="right"
-         >
+
+    </div>
+    <div class="RightSide">
+        <img id="i1" src="assests/img/main.jpeg"
+             alt="main.jpeg"
+             title="my image"
+        >
+
+    </div>
+
+
 </section>
 
-<!--about me---------------------------------------------------------------------->
+<!--about me-----------------------------------------------------------------------------------about me------->
 
 <section id="about">
-    <h1 id="ab txt1"><u><strong><Span id="l2">A</Span>bout <span id="l2.1">M</span>e</strong></u></h1>
+    <div class="head">
+        <h2 data-text="About..me..."><span class="red">A</span>bout..<span class="red">m</span>e...</h2>
+    </div>
 
-<!--    image02-->
-    <img id="img2" src="assests/img/m2.jpeg"
-         alt="m2.jpeg"
-         title="my image2"
-         align="left"
-         >
-
+    <div>
+        <img id="img2" src="assests/img/m2.jpeg"
+             alt="m2.jpeg"
+             title="my image2"
+             align="left"
+        >
+    </div>
     <div>
         <h1 id="ab txt2">Welcome to my personal page !</h1>
         <p id="ab txt3">My name is Malindu Adeesha. I live in Kalutara District, Sri Lanka.
             <br>I am currently studying computer science.
             <br>I enjoy coding, graphic designing,3D modeling, web developing.
-            <br>I prefer to do ux ui design.I have a serious passions for UI effects, animations
+            <br>I prefer to do ux ui design.I have a serious passions for
+            <br>UI effects, animations
             <br>and creating intuitive, dynamic user experience.
-            <br>Well-organized person, problem solver, independent employee with high attention to deal.
+            <br>Well-organized person, problem solver, independent employee
+            <br> high attention to deal.
             <br>Let's make something special</p>
 
         <button type="see more" id="see more">See more <i class="fa-solid fa-angles-right" style="color: #ffffff;"></i></button>
@@ -115,60 +159,286 @@
 </section>
 <!--skills----------------------------------------------------------------->
 <section id="skills">
-    <h1 id="sk txt1"><u><strong><span id="l3">S</span>kills</strong></u></h1>
+    <div class="head">
+        <h2 data-text="Skills..."><span class="green">S</span>kills...</h2>
+    </div>
+<!--popup-->
+    <div class="popup">
+        <div class="contentBox">
+            <div class="close"></div>
+            <div class="imgBX">
+                <img src="assests/img/popup.jpg" alt="alert">
+            </div>
+            <div class="content1">
+                <h3>Alert</h3>
+                <h2>Please note that</h2>
+                <p>Bring the curser onto the card as indicated by the <span>arrow head</span></p>
+                <h1>(Insert the cursor above the card separately from the card)</h1>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const popup =document.querySelector('.popup');
+        const close =document.querySelector('.close')
+        //  window.onload = function () {
+        //     setTimeout(function () {
+        //         popup.style.display ="block"
+        //     },500)
+        // }
+        close.addEventListener('click',()=>{
+            popup.style.display ="none"
+        })
+    </script>
+
+
+<!--    &#45;&#45;---------------------------------->
+    <div class="container">
+        <div class="card">
+            <h3 class="title">Java</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50"/>
+                </svg>
+                <h1 class="percentage">80%</h1>
+                <p class="desc">My subject is Java. I know Java only 80% well.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="title">My Sql</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50"/>
+                </svg>
+                <h1 class="percentage">90%</h1>
+                <p class="desc"> I have studied mysql related to database. I know only 90% of it.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="title">OOP</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50"/>
+                    <h1 class="percentage">80%</h1>
+                    <p class="desc"> I know object oriented programming 80%.</p>
+                </svg>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="title">Architecture</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50"/>
+                </svg>
+                <h1 class="percentage">89%</h1>
+                <p class="desc"> I have studied MVC architecture and Layered architecture. I know 89% of it.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="title">ORM</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50"/>
+                </svg>
+                <h1 class="percentage">79%</h1>
+                <p class="desc"> I have studied Object Relational Mapping. I know 79% of it.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="title">HTML</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50"/>
+                </svg>
+                <h1 class="percentage">99%</h1>
+                <p class="desc"> I have studied HTML well. I know 99% of it.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="title">CSS</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50"/>
+                </svg>
+                <h1 class="percentage">95%</h1>
+                <p class="desc"> I have studied CSS well. I know 95% of it.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="title">JS</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50"/>
+                </svg>
+                <h1 class="percentage">95%</h1>
+                <p class="desc"> I have studied Java Script. I know 95% of it.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="title">Network &nbsp;Programming</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50"/>
+                </svg>
+                <h1 class="percentage">90%</h1>
+                <p class="desc"> I have studied Network Programming. I know 90% of it.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!--projects-->
+<!--projects-------------------------------------------------------------------------------------------------projects---------->
 <section id="projects">
-    <h1><u><strong><span id="l4">P</span>rojects</strong></u></h1>
-<div id="pr1">
-    <a href="http://www.facebook.com/print3dexpert" target="blank">
-        <img src="assests/img/1.jpg"
-             alt="1.jpg"
-             title="Click to visit us on Software Development Projects"
-        ></a>
-    <br>
-    <h4>Software Development Projects</h4>
-</div>
- <div id="pr2">
-     <a href="http://www.facebook.com/print3dexpert" target="blank">
-         <img src="assests/img/2.jpg"
-              alt="2.jpg"
-              title="Click to visit us on Web Design Projects"
-         ></a>
-     <br>
-     <h4>Web Design Projects</h4>
- </div>
-<div id="pr3">
-    <a href="http://www.facebook.com/print3dexpert" target="blank">
-        <img src="assests/img/3.jpg"
-             alt="3.jpg"
-        title="Click to visit us on 3D Design Projects"
-        ></a>
-    <br>
-    <h4>3D Design Projects</h4>
-</div>
-<div id="pr4">
-    <a href="http://www.facebook.com/print3dexpert" target="blank">
-        <img src="assests/img/4.jpg"
-             alt="4.jpg"
-        title="Click to visit us on graphic projects"
-        ></a>
-    <br>
-    <h4>Graphic Design Projects</h4>
-</div>
-<div id="pr5">
-    <a href="http://www.facebook.com/print3dexpert" target="blank">
-        <img src="assests/img/5.jpg"
-             alt="5.jpg"
-        title="Click to visit us on Other Projects"
-        ></a>
-    <br><h4>Other Projects</h4>
-</div>
+    <div class="head">-->
+        <h2 data-text="Projects..."><span class="yellow">P</span>rojects...</h2>
+            </div>
+    <div class="field">
+    <div class="cont">
+        <div class="rCard">
+            <div class="fontS" id="noOne"><h1>Software Development Projects</h1></div>
+            <div class="backS">
+                <h1>details</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto eos
+                    expedita nisi odit temporibus veritatis voluptatum! Aperiam doloribus harum id illo
+                    inventore iusto quas quis rem saepe sit. Rerum!</p>
+                <button><a href="#">See more</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="rCard">
+            <div class="fontS" id="noTwo"><h1>Web Design Projects</h1></div>
+            <div class="backS">
+                <h1>details</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, veniam.</p>
+                <button><a href="#">See more</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="rCard">
+            <div class="fontS" id="noThree"><h1>3D Design Projects</h1></div>
+            <div class="backS">
+                <h1>details</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, veniam.</p>
+                <button><a href="#">See more</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="rCard">
+            <div class="fontS" id="noFour"><h1>Graphic Design Projects</h1></div>
+            <div class="backS">
+                <h1>details</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, veniam.</p>
+                <button><a href="#">See more</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="rCard">
+            <div class="fontS" id="noFive"><h1>Assignments</h1></div>
+            <div class="backS">
+                <h1>details</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, veniam.</p>
+                <button><a href="Assignments/index.html">See more</a></button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+<!--    <div class="head">-->
+<!--        <h2 data-text="Projects..."><span class="yellow">P</span>rojects...</h2>-->
+<!--    </div>-->
+<!--    <div class="allPr" id="pr1">-->
+<!--        <a href="http://www.facebook.com/print3dexpert" target="blank">-->
+<!--            <img src="assests/img/1.jpg"-->
+<!--                 alt="1.jpg"-->
+<!--                 title="Click to visit us on Software Development Projects"-->
+<!--            ></a>-->
+<!--        <br>-->
+<!--        <h4>Software Development Projects</h4>-->
+<!--    </div>-->
+<!--    <div class="allPr" id="pr2">-->
+<!--        <a href="http://www.facebook.com/print3dexpert" target="blank">-->
+<!--            <img src="assests/img/2.jpg"-->
+<!--                 alt="2.jpg"-->
+<!--                 title="Click to visit us on Web Design Projects"-->
+<!--            ></a>-->
+<!--        <br>-->
+<!--        <h4>Web Design Projects</h4>-->
+<!--    </div>-->
+<!--    <div class="allPr" id="pr3">-->
+<!--        <a href="http://www.facebook.com/print3dexpert" target="blank">-->
+<!--            <img src="assests/img/3.jpg"-->
+<!--                 alt="3.jpg"-->
+<!--                 title="Click to visit us on 3D Design Projects"-->
+<!--            ></a>-->
+<!--        <br>-->
+<!--        <h4>3D Design Projects</h4>-->
+<!--    </div>-->
+<!--    <div class="allPr" id="pr4">-->
+<!--        <a href="http://www.facebook.com/print3dexpert" target="blank">-->
+<!--            <img src="assests/img/4.jpg"-->
+<!--                 alt="4.jpg"-->
+<!--                 title="Click to visit us on graphic projects"-->
+<!--            ></a>-->
+<!--        <br>-->
+<!--        <h4>Graphic Design Projects</h4>-->
+<!--    </div>-->
+<!--    <div class="allPr" id="pr5">-->
+<!--        <a href="http://www.facebook.com/print3dexpert" target="blank">-->
+<!--            <img src="assests/img/5.jpg"-->
+<!--                 alt="5.jpg"-->
+<!--                 title="Click to visit us on Other Projects"-->
+<!--            ></a>-->
+<!--        <br><h4>Other Projects</h4>-->
+<!--    </div>-->
 </section>
 <!--contact-->
 <section id="contact">
-    <h1><u><strong><span id="l5">C</span>ontact</strong></u></h1>
+    <div class="head">
+        <h2 data-text="Contacts..."><span class="pink">C</span>ontacts...</h2>
+    </div>
     <br>
     <br>
     <br>
@@ -206,23 +476,24 @@
 
     <h1 id="con txt1">Get in touch</h1>
     <br>
+    <div class="formbox">
     <form action="">
         <div align="left">
-            <lable for="fName"><h5>First name*</h5> &nbsp;&nbsp;&nbsp;</lable>
+            <lable for="fName"><h5 class="space">First name*</h5> &nbsp;&nbsp;&nbsp;</lable>
             <input type="text" name="fname" id="fname" placeholder="First name">
             &nbsp;&nbsp;&nbsp;
 
-            <label for="lname"><h5>Last name*</h5> &nbsp;&nbsp;&nbsp;</label>
+            <label for="lname"><h5 class="space">Last name*</h5> &nbsp;&nbsp;&nbsp;</label>
             <input type="text" name="lname" id="lname" placeholder="Last name">
         </div>
         <br>
         <div align="left">
-            <label for="email"><h5>E-mail*</h5> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <label for="email"><h5 class="space">E-mail*</h5> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
             <input type="email" name="email" id="email" placeholder="e-mail">
         </div>
         <br>
         <div align="left">
-            <label for="message"><h5>Message*</h5></label><br>
+            <label for="message"><h5 class="space">Message*</h5></label><br>
 
         </div>
         <div align="center">
@@ -248,6 +519,7 @@
         </div>
 
     </form>
+    </div>
 </section>
 </body>
 </html>
